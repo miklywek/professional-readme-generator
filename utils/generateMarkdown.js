@@ -45,7 +45,7 @@ function generateMarkdown(data) {
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  *  ${data.license}
+  * ${renderLicenseLink(data.license)}
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
@@ -63,8 +63,7 @@ function generateMarkdown(data) {
   For more information on how to add screenshots for examples, visit the following website:
   
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
-  
-  ${renderLicenseSection(data.license)}
+ 
   ## [Contributing](#table-of-contents)
   
   ${(data.confirmContributers, data.contribute)}

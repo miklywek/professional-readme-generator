@@ -1,7 +1,3 @@
-// // TODO: Include packages needed for this application
-// import inquirer from "inquirer";
-// import generateMarkdown from "./utils/generateMarkdown.js";
-
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js");
 const fs = require("fs");
@@ -45,99 +41,99 @@ const questions = [
       }
     },
   },
-  //   {
-  //     type: "input",
-  //     name: "what",
-  //     message: "What is your project and what problem will it solve? (Required)",
-  //     validate: (whatInput) => {
-  //       if (whatInput) {
-  //         return true;
-  //       } else {
-  //         return false;
-  //       }
-  //     },
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "why",
-  //     message: "Why did you create this project? (Required)",
-  //     validate: (whyInput) => {
-  //       if (whyInput) {
-  //         return true;
-  //       } else {
-  //         return false;
-  //       }
-  //     },
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "how",
-  //     message: "How will someone use this? (Required)",
-  //     validate: (howInput) => {
-  //       if (howInput) {
-  //         return true;
-  //       } else {
-  //         return false;
-  //       }
-  //     },
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "installation",
-  //     message:
-  //       "Please provide step-by-step installation instructions for your project. (Required)",
-  //     validate: (instalInput) => {
-  //       if (instalInput) {
-  //         return true;
-  //       } else {
-  //         return false;
-  //       }
-  //     },
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "usage",
-  //     message: "Please provide instructions and examples for use. (Required)",
-  //     validate: (usageInput) => {
-  //       if (usageInput) {
-  //         return true;
-  //       } else {
-  //         return false;
-  //       }
-  //     },
-  //   },
-  //   {
-  //     type: "list",
-  //     name: "license",
-  //     message: "Which license will you use for your project?",
-  //     choices: ["agpl", "apache", "mit", "no license"],
-  //   },
-  //   {
-  //     type: "confirm",
-  //     name: "confirmContributers",
-  //     message: "Would you like to allow other developers to contribute?",
-  //     default: true,
-  //   },
-  //   {
-  //     type: "input",
-  //     name: "contribute",
-  //     message: "Please provide guidelines for contributing. (Required)",
-  //     when: ({ confirmContributers }) => {
-  //       if (confirmContributers) {
-  //         return true;
-  //       } else {
-  //         return false;
-  //       }
-  //     },
-  //     validate: (contributerInput) => {
-  //       if (contributerInput) {
-  //         return true;
-  //       } else {
-  //         console.log("Please enter contributer guidelines!");
-  //         return false;
-  //       }
-  //     },
-  //   },
+  {
+    type: "input",
+    name: "what",
+    message: "What is your project and what problem will it solve? (Required)",
+    validate: (whatInput) => {
+      if (whatInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "why",
+    message: "Why did you create this project? (Required)",
+    validate: (whyInput) => {
+      if (whyInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "how",
+    message: "How will someone use this? (Required)",
+    validate: (howInput) => {
+      if (howInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "installation",
+    message:
+      "Please provide step-by-step installation instructions for your project. (Required)",
+    validate: (instalInput) => {
+      if (instalInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Please provide instructions and examples for use. (Required)",
+    validate: (usageInput) => {
+      if (usageInput) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Which license will you use for your project?",
+    choices: ["agpl", "apache", "mit", "no license"],
+  },
+  {
+    type: "confirm",
+    name: "confirmContributers",
+    message: "Would you like to allow other developers to contribute?",
+    default: true,
+  },
+  {
+    type: "input",
+    name: "contribute",
+    message: "Please provide guidelines for contributing. (Required)",
+    when: ({ confirmContributers }) => {
+      if (confirmContributers) {
+        return true;
+      } else {
+        return false;
+      }
+    },
+    validate: (contributerInput) => {
+      if (contributerInput) {
+        return true;
+      } else {
+        console.log("Please enter contributer guidelines!");
+        return false;
+      }
+    },
+  },
   {
     type: "input",
     name: "test",
