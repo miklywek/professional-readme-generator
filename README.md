@@ -33,6 +33,11 @@ Here is an MP4 showing the entire process that can be watched through the Awesom
 
 [Walkthrough video](assets/Professional-README-Generator.mp4)
 
+
+https://user-images.githubusercontent.com/64354412/205621366-1cf17ded-6562-4e0d-a319-ac986cfeb596.mp4
+
+
+
 ## Questions
 
 _For further questions:_
